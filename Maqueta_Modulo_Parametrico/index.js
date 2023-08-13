@@ -18,12 +18,13 @@ var productoInput = document.getElementById("producto");
 var procesoInput = document.getElementById("proceso");
 var capacidadInput = document.getElementById("capacidad");
 var bancaInput = document.getElementById("Banca");
-var evaluarButton = document.querySelector("button");
+var evaluarButton = document.getElementById("evaluarButton");
 
 
 evaluarButton.addEventListener("click", function (e) {
     e.preventDefault();
-    alert("Se ha hecho clic en el botón");
+    console.log("Clic en el botón");
+    
     var scoreValue = scoreInput.value;
     var zonaValue = zonaInput.value;
     var reglaElicitaValue = reglaElicitaInput.value;
@@ -43,5 +44,26 @@ evaluarButton.addEventListener("click", function (e) {
     var procesoValue = procesoInput.value;
     var capacidadValue = capacidadInput.value;
     var bancaValue = bancaInput.value;
+ 
+    console.log("Score:", scoreValue);
+    console.log("Zona:", zonaValue);
+    console.log("Regla Elicita:", reglaElicitaValue);
+    console.log("Sucursal:", sucursalValue);
+    console.log("División:", divisionValue);
+    console.log("Referencia de Crédito:", referenciaValue);
+    console.log("Economía:", economiaValue);
+    console.log("Edad:", edadValue);
+    console.log("Ratio CP:", ratioValue);
+    console.log("Clave de Buro:", claveValue);
+    console.log("Saldos Vencidos:", saldosValue);
+    console.log("BSC:", bscValue);
+    console.log("CCI:", cciValue);
+    console.log("Monto de Crédito:", montoValue);
+    console.log("Tipo de Crédito:", creditoValue);
+    console.log("Tipo de Producto:", productoValue);
+    console.log("Proceso:", procesoValue);
+    console.log("Capacidad de Pago:", capacidadValue);
+    console.log("Banca:", bancaValue);
 
+    
 });
