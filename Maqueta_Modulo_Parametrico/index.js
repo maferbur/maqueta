@@ -77,9 +77,17 @@ evaluarButton.addEventListener("click", function (e) {
         (sucursalValue == "0010" && creditoValue == "PA" && bancaValue == "RC")||
         (economiaValue == "ADMPUB" && creditoValue == "RECO" && capacidadValue == "NO" && bancaValue == "RP")
         ){
-        alert("RECHAZADO");
+        //alert("RECHAZADO");
+        Swal.fire({
+            icon: 'error',
+            title: 'Rechazado',
+          })
     } else {
-        alert("APROBADO");
+        Swal.fire({
+            icon: 'success',
+            title: 'Elevado'
+        })
+        //alert("APROBADO");
     }
     
 });
