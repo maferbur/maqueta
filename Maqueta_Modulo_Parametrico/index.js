@@ -66,15 +66,15 @@ evaluarButton.addEventListener("click", function (e) {
     console.log("Banca:", bancaValue);
 
     if (
-        (scoreValue == "720" && edadValue == "25" && ratioValue == "1.2" && productoValue == "NOM")||
-        (scoreValue == "760" && edadValue == "50" && bscValue == "0999" && cciValue == "0007" && productoValue == "PPI")||
-        (scoreValue == "610" && referenciaValue == "CR" && ratioValue == "1.1" && cciValue == "0300")||
-        (scoreValue == "500" && divisionValue == "OCCIDENTE" && edadValue == "20" && creditoValue == "NPA" && productoValue == "NOM" && procesoValue == "NVO")||
-        (scoreValue == "700" && ratioValue == "1.2" && creditoValue == "NPA" && productoValue == "PPI")||
-        (scoreValue == "600" && referenciaValue == "SR" && economiaValue == "COMNES" && edadValue == "30")||
-        (scoreValue == "710" && reglaElicitaValue == "RV03" && divisionValue == "METROPOLITANA NORTE" && saldosValue == "5000")||
-        (scoreValue == "680" && montoValue == "150000" && claveValue == "RV")||
-        (sucursalValue == "0010" && creditoValue == "PA" && bancaValue == "RC")||
+        (scoreValue < 720 && edadValue < 25 && ratioValue < 1.2 && productoValue == "NOM") ||
+        (scoreValue < 760 && edadValue < 50 && bscValue < 999 && cciValue < 7 && productoValue == "PPI") ||
+        (scoreValue < 610 && referenciaValue == "CR" && ratioValue < 1.1 && cciValue < 300) ||
+        (scoreValue < 500 && divisionValue == "OCCIDENTE" && edadValue < 20 && creditoValue == "NPA" && productoValue == "NOM" && procesoValue == "NVO") ||
+        (scoreValue < 700 && ratioValue < 1.2 && creditoValue == "NPA" && productoValue == "PPI") ||
+        (scoreValue < 600 && referenciaValue == "SR" && economiaValue == "COMNES" && edadValue < 30) ||
+        (scoreValue < 710 && reglaElicitaValue == "RV03" && divisionValue == "METROPOLITANA NORTE" && saldosValue > 5000) ||
+        (scoreValue < 680 && montoValue > 150000 && claveValue == "RV") ||
+        (sucursalValue == "0010" && creditoValue == "PA" && bancaValue == "RC") ||
         (economiaValue == "ADMPUB" && creditoValue == "RECO" && capacidadValue == "NO" && bancaValue == "RP")
         ){
         //alert("RECHAZADO");
