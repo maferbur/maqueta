@@ -66,8 +66,8 @@ evaluarButton.addEventListener("click", function (e) {
     console.log("Banca:", bancaValue);
 
     if (
-        (scoreValue < 720 && edadValue < 25 && ratioValue < 1.2 && productoValue == "NOM") ||
-        (scoreValue < 760 && edadValue < 50 && bscValue < 999 && cciValue < 7 && productoValue == "PPI") ||
+        (scoreValue < 720 && edadValue < 25 && ratioValue < 1.2 && productoValue == "NOM" && !divisionValue && !creditoValue) ||
+        (scoreValue < 760 && edadValue < 50 && bscValue < 999 && cciValue < 7 && productoValue == "PPI" && !creditoValue) ||
         (scoreValue < 610 && referenciaValue == "CR" && ratioValue < 1.1 && cciValue < 300) ||
         (scoreValue < 500 && divisionValue == "OCCIDENTE" && edadValue < 20 && creditoValue == "NPA" && productoValue == "NOM" && procesoValue == "NVO") ||
         (scoreValue < 700 && ratioValue < 1.2 && creditoValue == "NPA" && productoValue == "PPI") ||
